@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <title>
-      Research
-    </title>
+<title>
+  Research
+</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Documentation extras -->
-    <link href="css/docs.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+<!-- Documentation extras -->
+<link href="css/docs.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="../assets/js/html5shiv.js"></script>
     <script src="../assets/js/respond.min.js"></script>
@@ -28,161 +28,182 @@
 
     <!-- Place anything custom after this. -->
 
-	</head>
+</head>
 <body>
-<a class="sr-only" href="#content">Skip navigation</a>
+    <a class="sr-only" href="#content">Skip navigation</a>
 
-<!-- Docs master nav -->
-<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-    <div class="container">
-        <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="index.html" class="navbar-brand">Home</a>
+    <!-- Docs master nav -->
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">Home</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="research.html">Research</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="courses.html">Courses & Skills</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-            <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="research.html">Research</a>
-                </li>
-                <li>
-                    <a href="projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="courses.html">Courses & Skills</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    </header>
 
-<!-- Docs page layout -->
-<div class="bs-docs-header" id="content">
-    <div class="container">
-        <h2>Research</h2>
-        
-    </div>
-</div>
-<!-- Callout for the old docs link -->
+    <!-- Docs page layout -->
+    <div class="bs-docs-header" id="content">
+        <div class="container">
+            <h2>Research</h2>
 
-<div class="container bs-docs-container">
+        </div>
+    </div>
+    <!-- Callout for the old docs link -->
+
+    <div class="container bs-docs-container">
 <!-- Global Bootstrap settings
-================================================== -->
-<div class="bs-docs-section">
+    ================================================== -->
+    <div class="bs-docs-section">
     <!-- <h1>Research</h1> 
     <hr>    -->
 
-	<p>I am passionate about Machine learning and its applications. I am excited about Machine learning helping us build intelligent systems by learning from data. All my past research experience has seen me exploring some facet of ML.</p>
+    <p>I am passionate about Machine learning and its applications. I am excited about Machine learning helping us build intelligent systems by learning from data. All my past research experience has seen me exploring some facet of ML.</p>
     
     <div class="panel-group" id="accordion">
         <div class="panel panel-default">
             <div class="panel-heading" style="height:100px">
               <h3>
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                 Scaling up neural networks 
-                </a>
-              </h3>
-                <h4>
-                    <div class="pull-left">
-                        <i>Advisor: Prof. Yoshua Bengio, Universite de Montreal</i>
-                    </div>
-                    <div class="pull-right">
-                        Internship
-                    </div>
-                    <br>
-                </h4>
+                   Scaling neural language models 
+               </a>
+           </h3>
+           <h4>
+            <div class="pull-left">
+                <i>Advisor: Prof. Yoshua Bengio, Universite de Montreal</i>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse">
-              <div class="panel-body research-panel">
-                The summer after my junior year, I interned at LISA, the machine learning lab of Universite de Montreal. I worked on different aspects of scaling up neural networks. 
-                <ul>
-                <li>I worked on an idea called conditional computation, where additonal neural networks called gaters determine which units in the original network should be computed corresponding to a particular input. We can exploit the sparsity of activated units, by calculating only for these units and save computation. I built models based on this with different architectures and investigated their performance.</li>
-                <li>When dealing with very large dictionaries for neural language models, the normalization factor in the output softmax layer becomes intractable. I implemented Hierarchial softmax and Noise contrastive estimation to overcome this issue and compared their efficiency against training with a regular softmax layer.</li>
-                <li>I also built a system to generate n-grams on the fly (at run time) for very large datasets. For such datasets, it becomes infeasible to generate and store all possible n-grams because of the memory size required for that.</li>
-                <li>The development was done in Python, using the libraries Theano and Pylearn2.</li>
-                </ul>
-              </div>
+            <div class="pull-right">
+                Internship
             </div>
-        </div>
-             <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                    Learning from text commentary of the game of cricket
-                    </a>
-                </h3>
-                <h4>
-                    <div class="pull-left">
-                    <i>Advisor: Dr. Vijaya V. Saradhi, Assistant Professor, IIT Guwahati</i>
-                    </div>
-                    <div class="pull-right">
-                        Undergraduate thesis
-                    </div>
-                    <br>
-                </h4>
+            <br>
+        </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="panel-body research-panel">
+        The summer after my junior year, I interned at LISA, the machine learning lab of Universite de Montreal. I worked on different aspects of scaling up neural networks. 
+        <ul>
+            <li>I worked on an idea called conditional computation, where additonal neural networks called gaters determine which units in the original network should be computed corresponding to a particular input. We can exploit the sparsity of activated units, by calculating only for these units and save computation. I built models based on this with different architectures and investigated their performance.</li>
+            <li>When dealing with very large dictionaries for neural language models, the normalization factor in the output softmax layer becomes intractable. I implemented Hierarchial softmax and Noise contrastive estimation to overcome this issue and compared their efficiency against training with a regular softmax layer.</li>
+            <li>I also built a system to generate n-grams on the fly (at run time) for very large datasets. For such datasets, it becomes infeasible to generate and store all possible n-grams because of the memory size required for that.</li>
+            <li>The development was done in Python, using the libraries Theano and Pylearn2.</li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                Learning from text commentary of the game of cricket
+            </a>
+        </h3>
+        <h4>
+            <div class="pull-left">
+                <i>Advisor: Dr. Vijaya V. Saradhi, Assistant Professor, IIT Guwahati</i>
             </div>
-        <div id="collapseTwo" class="panel-collapse collapse">
-            <div class="panel-body research-panel">
+            <div class="pull-right">
+                Undergraduate thesis
+            </div>
+            <br>
+        </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body research-panel">
             <ul>    
                 <li>Exploring strengths, weaknesses and playing strategies of cricket players and their relationships with external factors like weather, batting order, etc. </li>
                 <li>Investigating the usefulness of Canonical correspondence analysis to ordinate data points along gradients of important external variables, to come up with a low dimensional triplot describing the traits of players and the influence of external factors</li>
                 <li>Extracted features from text commentary of the game using a combination of text mining techniques</li>
             </ul>
         </div>
-        </div>
-      </div>
+    </div>
+</div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                    Statistical methods for better network traffic analysis
-                    </a>
-                </h3>
-                <h4>
-                    <div class="pull-left">
-                        <i>Advisor: Dr. Vijaya V. Saradhi, Assistant Professor, IIT Guwahati</i>
-                    </div>
-                    <div class="pull-right">
-                        Summer research project
-                    </div>
-                    <br>
-                </h4>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                Statistical methods for better network traffic analysis
+            </a>
+        </h3>
+        <h4>
+            <div class="pull-left">
+                <i>Advisor: Dr. Vijaya V. Saradhi, Assistant Professor, IIT Guwahati</i>
             </div>
-        <div id="collapseThree" class="panel-collapse collapse">
-            <div class="panel-body research-panel">
-                <ul>
-                    <li>Devised flow based representations of network traffic, where each flow is made a node and similarity between flows constitutes an edge, as an alternative to overcome the deficiencies of traditional packet-based traffic dispersion graphs (TDGs)</li>
-                    <li>Analyzed how well these representations captured traffic flows, and their relationships with TDGs using Canonical correlation analysis</li>
-                </ul>
+            <div class="pull-right">
+                Summer research project
             </div>
+            <br>
+        </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body research-panel">
+            <ul>
+                <li>Devised flow based representations of network traffic, where each flow is made a node and similarity between flows constitutes an edge, as an alternative to overcome the deficiencies of traditional packet-based traffic dispersion graphs (TDGs)</li>
+                <li>Analyzed how well these representations captured traffic flows, and their relationships with TDGs using Canonical correlation analysis</li>
+            </ul>
         </div>
-      </div>
+    </div>
+</div>
 
-      </div>
+</div>
 </div>
 </div>
 <!-- Footer
-================================================== -->
+    ================================================== -->
+    <footer role="contentinfo" style="margin-top:40px">
+        <div id="footer">
+            <div class="well well-sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4>Get in touch!</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>E-mail me at <a href="mailto:rahulhuilgol@gmail.com">rahulhuilgol@gmail.com</a></h4>
+
+                        </div>
+                        <div class="col-md-3 pull-right" >
+                            <h4>Follow my work <a href="https://github.com/rahul003">On Github</a></h4>
+                        </div>
+                    </div>
 
 
-<!-- JS and analytics only. -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS and analytics only. -->
 <!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript " src="js/bootstrap.min.js"></script>
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript " src="js/bootstrap.min.js"></script>
 <!-- <script type="text/javascript " src="js/application.htm"></script>
 <script type="text/javascript " src="js/run_prettify.htm"></script>
- -->
+-->
 
 
 <!-- Analytics
-================================================== -->
+    ================================================== -->
 
 
 
